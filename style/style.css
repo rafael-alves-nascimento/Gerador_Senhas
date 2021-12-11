@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/imagem\ gamer.gif);
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.senha-container {
+    background-color: transparent;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    min-width: 400px;
+}
+
+.senha-header {
+    padding: 1rem;
+}
+
+.senha {
+    background-image: linear-gradient(to left, purple,transparent,purple);
+    color: black;
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+    overflow: auto;
+    border-color: black;
+    border-radius: 5px;
+}
+
+.senha button {
+    background-color: black;
+    border: none;
+    color: purple;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 0.25rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0, 20%);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    opacity: 0;
+    
+}
+
+.senha:hover button {
+    opacity: 1;
+    transform: translate(0, 0%);
+}
+
+.senha-body {
+    padding: 0 1rem 1rem;
+}
+
+.check-box {
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+}
+
+.gerador {
+    background-color: transparent;
+    background-image: linear-gradient(to left, transparent,purple,transparent);
+    cursor: pointer;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    width: 100%;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 5px;
+
+}
+.letras {
+    background-image: linear-gradient(to left, purple,white,purple);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 1.4rem;
+  
+    /* Adicionado: */
+    -webkit-text-fill-color: transparent;
+  }

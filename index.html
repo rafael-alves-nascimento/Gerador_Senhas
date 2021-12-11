@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rafael Password</title>
+        <link rel="stylesheet" href="./style/style.css" />
+        <script src="./script/script.js" defer></script>
+    </head>
+    <body>
+        <div class="senha-container">
+            <div class="senha-header">
+                <div class="senha">
+                    <span id="senha">Senhas</span>
+                    <button id="copiar">Copiar</button>
+                </div>
+            </div>
+            <div class="senha-body">
+                <div class="check-box">
+                    <label for="len" class="letras">Comprimento da senha</label>
+                    <input id="len" value="15" type="number" min="0" max="50"/>
+                </div>
+                <div class="check-box">
+                    <label for="mai" class="letras">Letras maiusculas</label>
+                    <input id="mai" type="checkbox" checked="checked"/>
+                </div>
+                <div class="check-box">
+                    <label for="min" class="letras">Letras minusculas</label>
+                    <input id="min" type="checkbox" />
+                </div>
+                <div class="check-box">
+                    <label for="numero" class="letras">Numeros</label>
+                    <input id="numero" type="checkbox" />
+                </div>
+                <div class="check-box">
+                    <label for="car_espec" class="letras">Simbolos</label>
+                    <input id="car_espec" type="checkbox" />
+                </div>
+                <button class="gerador" id="gerador">
+                    Gerar senhas
+                </button>
+            </div>
+        </div>
+    </body>
+</html>
